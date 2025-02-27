@@ -1,1 +1,0 @@
-alert("XIN CHÀO!");
