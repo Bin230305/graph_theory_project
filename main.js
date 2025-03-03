@@ -7,7 +7,7 @@ function drawGraph() {
   edgesArray.forEach(e => { nodesSet.add(e[0]); nodesSet.add(e[1]); });
   
   let nodes = Array.from(nodesSet).map(id => ({ id, label: id.toString() }));
-  let edges = edgesArray.map(e => ({ from: e[0], to: e[1] ,arrows: graphType ==='directed' ? 'to' : ''}));
+  let edges = edgesArray.map(e => ({ from: e[0], to: e[1] , label: e[2].toString() ,arrows: graphType ==='directed' ? 'to' : ''}));
   
   let container = document.getElementById('network');
   let data = { nodes: new vis.DataSet(nodes), edges: new vis.DataSet(edges) };
