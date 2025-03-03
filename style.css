@@ -5,7 +5,7 @@
 }
 
 html{
-    font-size: 16px;
+    font-size: 18px;
 }
 body{
     margin: 0;
@@ -19,7 +19,7 @@ header{
     justify-content: space-between;
     align-items: center;
     background-color: rgb(41, 41, 41);
-    height: 2rem;
+    height: 3rem;
     width: 100%;
     margin-bottom: 2rem;
     border: 1px solid black;
@@ -50,6 +50,7 @@ header{
 }
 .icon_header{
     padding: 0 10px;
+    font-size: 2rem;
 }
 main {
     width: 80%;
