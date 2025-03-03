@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script type="text/javascript" src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
     <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
-    <script src="main.js" ></script>
 </head>
 <body>
     <header id="header">
@@ -23,11 +22,18 @@
             <i class="fa fa-user icon_header"></i>
             <i class="fa fa-commenting icon_header"></i>
         </div>
+
+        
         
     </header>
     <main id="container">
-        <article id="graph_side"></article>
-        <aside id="tools_side"></aside>
+        <!-- <article id="graph_side"></article>
+        <aside id="tools_side"></aside> -->
+        <textarea type="text" id="edgeInput"></textarea>
+        <lable><input type="radio" name="graphType" value="directed"  checked>đồ thị có hướng</lable>
+        <lable><input type="radio" name="graphType" value="undirected" >đồ thị vô có hướng</lable>
+        <button onclick="drawGraph()">Vẽ đồ thị</button>
+        <div id="network"></div>
     </main>
     <footer id="footer"></footer>
     <script src="main.js" defer></script>
