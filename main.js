@@ -1,3 +1,5 @@
+
+
 function drawGraph() {
   let edgeInput = document.getElementById('edgeInput').value;
   let edgesArray = edgeInput.split('\n').map(e => e.trim().split('-').map(Number));
