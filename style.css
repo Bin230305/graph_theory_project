@@ -5,7 +5,8 @@
 }
 
 html{
-    font-size: 18px;
+    font-size: 16px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 body{
     margin: 0;
@@ -25,6 +26,7 @@ header{
     margin-bottom: 2rem;
     border: 1px solid black;
     font-size: 1.5rem;
+    z-index: 10;
 }
 .left_header{
     height: 100%;
@@ -33,15 +35,37 @@ header{
     justify-content: left;
     align-items: center;
 }
+.menu_icon{
+    cursor: pointer;
+}
 .menu_box{
-
+    z-index: 9;
     height: 100vh;
-    width: 270px;
-    position: absolute;
-    left: 100%;
-    top: 0;
-    background-color: aquamarine;
-
+    width: 250px;
+    position: fixed;
+    cursor: pointer;
+    left: -100%;
+    top: 4rem;
+    background-color: rgb(64, 63, 63);
+    border-right: 2px solid black;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+    transition: transform 1.5s ease-in;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    row-gap: 10px;
+    padding: 10px 20px ;
+    font-size: 1.5rem;
+}
+.algorithms_list_item{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    row-gap: 8px;
+    font-size: 1.2rem;
+}
+.menu_box.move{
+    left: 0;
 }
 .middle_header{
     height: 100%;
@@ -49,7 +73,7 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     
 }
 #logo_image{

@@ -1,3 +1,9 @@
+const menu_box= document.querySelector(".menu_box");
+const menu_icon= document.querySelector(".menu_icon");
+
+menu_icon.addEventListener("click", function(){
+    menu_box.classList.toggle("move");
+});
 
 
 function drawGraph() {
